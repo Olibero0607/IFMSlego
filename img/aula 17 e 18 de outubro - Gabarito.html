@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aula 17/10</title>
+</head>
+<body>
+<script type="text/javascript">
+	// let num;
+	// let i;
+	// let contador = 0;
+	// num = +prompt("Informe um número");
+
+	// for(i=1; i<=num; i++)
+	// {
+	// 	if(i % 11 == 0)
+	// 	{
+	// 		contador = contador + 1;
+	// 	}
+	// }
+
+
+	// let i, numero, maior;
+	// for(i=1; i<=5; i++)
+	// {
+	// 	numero = +prompt("Informe um valor");
+	// 	if( i == 1 )
+	// 	{
+	// 		maior = numero; 
+	// 	}
+	// 	else{
+	// 		if(maior < numero)
+	// 		{
+	// 			maior = numero;
+	// 		}
+	// 	}
+	// }
+	// document.write("O maior valor informado é: "+maior);
+
+	let i=1, nome, sobrenome, classe;
+	let cont_guerreiro = 0;
+	let cont_paladino = 0;
+	let cont_mago = 0;
+	let cont_druida = 0;
+
+	while(i<=6)
+	{
+		nome = prompt("Informe seu nick");
+		sobrenome = prompt("Informe seu sobrenome");
+		classe = prompt("Escolha sua classe\nguerreiro\ndruida\nmago\npaladino");
+		switch(classe)
+		{
+			case "guerreiro":
+				cont_guerreiro++; // cont_guerreiro = cont_guerreiro + 1
+			break;
+			case "paladino":
+				cont_paladino++;
+			break;
+			case "druida":
+				cont_druida++;
+			break;
+			case "mago":
+				cont_mago++;
+			break;
+			default:
+				alert("Informe uma classe valida!");	
+			break;
+		}
+		i++;
+		alert("Obrigado Jogador "+nome+" "+sobrenome+"! A classe escolhida foi : "+classe);
+	}
+	document.write("A classe guerreiro, foi escolhida"+cont_guerreiro+" vezes;<br>A classe druida, foi escolhida "+cont_druida+"vezes;<br> A classe mago foi escolhida "+cont_mago+"vezes;<br>A classe paladino foi escolhida "+cont_paladino+" vezes.");
+
+		alert("Obrigado por utilizar nosso game! Quem é meu campeão? QUem é??")
+</script>
+</body>
+</html>
